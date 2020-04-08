@@ -1,0 +1,26 @@
+/*HTML*/
+
+/*body*/
+
+/*General Use*/
+body {
+    background-image: url("/assets/media/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+/*header*/
+header {
+    background-image: url("/assets/media/headerimage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+/*Map Style*/
+#map{
+    height: 100%;
+
+}
+/*footer*/
