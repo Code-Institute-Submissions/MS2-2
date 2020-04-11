@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="assets/js/scripts.js" type="text/javascript"></script>
 	<!--Maps API link-->
 
@@ -42,15 +42,39 @@
 
 	<div class="row">
 		<div class="col-4">
+        <!--credit for the section below to https://www.britannica.com/place/Appalachian-Mountains/Plant-and-animal-life & Wikipedia-->
 			<h3>Historical Facts of the trail</h3>
-			<p></p>
+			<ul>
+                <li><p>Various Eastern Woodlands Indian groups, including the Pennacook, Mohican (Mahican), and Susquehanna, inhabited the northern half of the Appalachians for centuries before European settlement.</p></li>
+                <li><p>In the southern mountains, the Cherokee were predominant. Warfare and eviction had driven most of the Indian populations from the mountains by the mid-19th century. The so-called Trail of Tears, the forced march of the Cherokee to Oklahoma in the fall and winter of 1838–39, is perhaps the best-known episode of Indian removal.</p></li>
+                <li><p> The pinnacle of the Appalachians, Mount Mitchell, once called Black Dome because of its blanket of virgin evergreens, is now a ghost forest of dead trees.</p></li>
+                <li><p>Southern Appalachian highlanders developed a distinctive culture characterized by handicrafts, ballads, folklore, and mores that reflect both the massive problems and the rich potential of the region.</p></li>
+                <li><p>Despite the early arrival of the lumber industry and the opening of the coal mines, some areas of Appalachia remained isolated until early in the 20th century, notably those mountain areas of the southern region where rough terrain hindered road building.</p></li>
+                <li><p>The diversity that characterizes Appalachian plant and animal life also exists in the system’s mineral resources. As the immense stands of timber throughout the Appalachians brought into existence important lumber and wood-pulp industries, so rich coal beds, veins of iron ore, salt springs and licks, and deposits of granite and marble created major American industries in the region. </p></li>
+            </ul>
 		</div>
 		<div class="col-4">
 			<h3>Points of Interest</h3>
-			<p></p>
+			<ul>
+                <li><p></p></li>
+                <li><p></p></li>
+                <li><p></p></li>
+                <li><p></p></li>
+                <li><p></p></li>
+                <li><p></p></li>
+            </ul>
 		</div>
 		<div class="col-4">
 			<h3>Flora & Fauna</h3>
+                <ul>
+                <li><p><a href="https://en.wikipedia.org/wiki/Picea_rubens">Red Spruce</a> and <a href="https://en.wikipedia.org/wiki/Abies_balsamea">Balsam Fir</a> can be found in the <a href="https://en.wikipedia.org/wiki/North_Maine_Woods">northern part of the mountain chain</a></p></li>
+                <li><p><a>the northern hardwoods (sugar maple, buckeye, beech, ash, birch, and red and white oak). Farther south are hickory, poplar, walnut, sycamore, and at one time the important and—before they were destroyed by blight—plentiful chestnuts. All of these, plus other of the 140 species of trees of Appalachia, are found in the southern mountain region.</a></p></li>
+                <li><p><a></a></p></li>
+                <li><p><a></a></p></li>
+                <li><p><a></a></p></li>
+                <li><p><a></a></p></li>
+            </ul>
+
 			<p></p>
 		</div>
 	</div>
@@ -67,10 +91,16 @@
 		var APIkey = "AIzaSyDV2rXpc-RvQizNTihXs0xXtVik0nRkmE8";
 	</script>
 	<script>
-
-	</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqv4q4QbAVlpK5Rl8UfYjYwM2lm_ggY5Y&libraries=geometry,places">
-</script>
+		function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 7,
+            center: { lat: 40.975, lng: -75.139 }
+            
+            });
+        }
+	</script> 
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV2rXpc-RvQizNTihXs0xXtVik0nRkmE8&callback=initMap" ></script>
+	
 </body>
 
 </html>
