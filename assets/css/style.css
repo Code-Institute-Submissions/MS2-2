@@ -1,3 +1,5 @@
+
+
 /*HTML*/
 
 /*body*/
@@ -7,21 +9,58 @@ body {
     background-image: url("/assets/media/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: -1;
-    color: white;
+    font-family: Roboto, sans-serif;
+    padding:5px;
+    margin: 0em 1em 0em 1em;
 }
 
-/*header
-header {
-    background-image: url("/assets/media/headerimage.jpg");
-    background-size: auto;
+/*header*/
+.greeting{
+    background-image: url(/assets/media/headerimage.jpg);
+    background-size: contain;
     background-repeat: no-repeat;
+    border: 3em solid #f97f1b;
     
-}*/
+}
+.greeting-content{
+    text-align: center;
+    color: #f97f1b;
+    font-family: Lato, sans-serif;
+}
+
+
+header {
+   color: #f97f1b;
+   text-align: center;
+    
+}
 
 /*Map Style*/
 div #map{
     height: 100%;
+    min-height: 360px;
+    padding: 2em; 
+    border-radius: 4px;
+    
+}
+.maprow{ 
+    margin: 0em 1em 0em 1em
+    }
 
+.mapcol{
+    padding: 1em;
 }
 /*footer*/
+
+/*information section*/
+.information{
+     background-color: rgba(45, 73, 30, .65);
+     border-radius: 3em;
+     display: inline-block;
+     padding: 2em;
+     border: 3px solid #799573;
+     color: #f9f4f0;
+}
+.infohead{
+    text-align: center;
+}
