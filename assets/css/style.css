@@ -4,9 +4,19 @@
 
 /*body*/
 
+
 /*General Use*/
-body {
+.DayTime {
     background-image: url("/assets/media/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Roboto, sans-serif;
+    padding:5px;
+    margin: 0em 1em 0em 1em;
+}
+
+.afterDark{
+    background-image: url("/assets/media/campfire.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     font-family: Roboto, sans-serif;
@@ -17,9 +27,10 @@ body {
 /*header*/
 .greeting{
     background-image: url(/assets/media/headerimage.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    border: 3em solid #f97f1b;
+    border: 1em solid #f97f1b;
+   
     
 }
 .greeting-content{
@@ -28,11 +39,20 @@ body {
     font-family: Lato, sans-serif;
 }
 
+.greetme{
+    font-size: 50px;
+}
+
 
 header {
    color: #f97f1b;
    text-align: center;
     
+}
+/* dark mode */
+.switch{
+    background-color: yellow;
+
 }
 
 /*Map Style*/
@@ -41,7 +61,10 @@ div #map{
     min-height: 360px;
     padding: 2em; 
     border-radius: 4px;
-    
+    width: 66%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .maprow{ 
     margin: 0em 1em 0em 1em
