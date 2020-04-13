@@ -38,3 +38,12 @@ function initMap() {
         
         });
     }
+
+// REI's API
+
+function campSiteSearch(){
+    
+}
+
+ 
+    
