@@ -39,11 +39,19 @@ function initMap() {
         });
     }
 
-// REI's API
+// search and return functions for waypoints.JSON
+var object = ""; 
+var waypoints = waypoints.json;
 
-function campSiteSearch(){
+function shelterSearch(){
     
 }
 
+function reader (){
+    for(i = 0; i < waypoints.JSON.length; i++){
+        object = waypoints.JSON[i]; 
+    }
+}
+//Credit for JSON file to SophiaKnows/Appalachian Trail Database hosted by SophiaKnows
  
     
