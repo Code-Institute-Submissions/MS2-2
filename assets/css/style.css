@@ -27,6 +27,30 @@
     margin: 0em 1em 0em 1em;
     z-index: -1;
 }
+.back2{
+    background-image: url("/assets/media/trail1.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 38rem;
+    min-width: 100%;
+     border: 3px #799573 solid;
+}
+.back3{
+    background-image: url("/assets/media/trail2.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 38rem;
+    min-width: 100%;
+     border: 3px #799573 solid;
+
+}
+ .break {
+     border: 3px #f97f1b solid;
+     border-radius: 5px;
+    
+}
 
 /*header*/
 .greeting{
@@ -81,12 +105,15 @@ div #map{
 
 /*information section*/
 .information{
-     background-color: rgba(45, 73, 30, .65);
+     background-color: #2D4934;
      border-radius: 3em;
      display: inline-block;
      padding: 2em;
      border: 3px solid #799573;
      color: #f9f4f0;
+}
+.interest{
+    min-width: 100%;
 }
 .infohead{
     text-align: center;

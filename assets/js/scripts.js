@@ -40,18 +40,15 @@ function initMap() {
     }
 
 // search and return functions for waypoints.JSON
-var object = ""; 
-var waypoints = waypoints.json;
 
-function shelterSearch(){
-    
-}
+var myData;
 
-function reader (){
-    for(i = 0; i < waypoints.JSON.length; i++){
-        object = waypoints.JSON[i]; 
-    }
-}
+
+$.getJSON('assets/js/waypoints.json', function(data) {    
+ myData = (data);
+});// adds JSON data to local array
 //Credit for JSON file to SophiaKnows/Appalachian Trail Database hosted by SophiaKnows
- 
+
     
+
+
