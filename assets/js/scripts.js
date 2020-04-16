@@ -29,25 +29,43 @@ $(document).ready(function(){
 
 
     // maps code below
-	var APIkey = "AIzaSyDV2rXpc-RvQizNTihXs0xXtVik0nRkmE8";
+    var APIkey = "AIzaSyDV2rXpc-RvQizNTihXs0xXtVik0nRkmE8";
+    var myData;
+    
+    $.getJSON('assets/js/waypoints.json', function(data) {    
+  myData = (data);
+});// adds JSON data to local variable
+//Credit for JSON file to SophiaKnows/Appalachian Trail Database hosted by SophiaKnows
 
 function initMap() {
+    var myLatLng;
+    var title;
+
+    function markerMaker(){ 
+       for(i=0;i<myData.length;i++){
+        myLatLng = "{" + myData[i].lat + "," + myData[i].lon + "}";
+        title = myData[i].name.toString();
+    }};
     map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 7,
+        zoom: 4,
         center: { lat: 40.975, lng: -75.139 }
         
         });
+
+    var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: title,
+  });
+  marker.setMap(map);
     }
 
-// search and return functions for waypoints.JSON
-
-var myData;
 
 
-$.getJSON('assets/js/waypoints.json', function(data) {    
- myData = (data);
-});// adds JSON data to local array
-//Credit for JSON file to SophiaKnows/Appalachian Trail Database hosted by SophiaKnows
+
+
+
+
 
     
 
