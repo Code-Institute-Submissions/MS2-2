@@ -82,7 +82,20 @@ header {
     background-color: yellow;
 
 }
-
+.aDcontent{
+    background-color: #ffffff;
+    
+}
+.formIt{
+    color: #f97f1b;
+    text-align: center;
+}
+div .helper{
+    background-color: rgba(0, 0, 0, .55);
+    width: 75vh;
+    margin-left: auto;
+    margin-right: auto;
+}
 /*Map Style*/
 div #map{
     height: 100%;

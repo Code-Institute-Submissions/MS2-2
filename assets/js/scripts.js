@@ -14,6 +14,7 @@ $(document).ready(function () {
             $("#back3").hide();
             $("#back2").hide();
             $("hr").hide();
+            $(".aDContent").show();
             $('#lightswitch').text("After Dark");
             $("body").attr('id', 'dark');
             $("div.information").fadeOut("slow");
@@ -22,6 +23,7 @@ $(document).ready(function () {
         else {
             $('body').removeClass("afterDark").addClass("DayTime");
             $('#lightswitch').removeClass("btn-light").addClass("btn-dark");
+            $(".aDContent").hide();
             $("#back3").show();
             $("#back2").show();
             $("hr").show();
@@ -53,15 +55,17 @@ function initMap() {
 
 function markerMaker(map){
     for(i = 0; i < myData.length; i++) {
-        var myLatLng = "{ lat:" + myData[i].lat + ", lng:" + myData[i].lon + "}";
-        var myLatLng2 = myLatLng.parseFloat(myLatLng);
-        var titleTwo = myData[i].name.toString();
+        var myLat = (myData[i].lat);
+        var myLng = (myData[i].lon);
+        myLatLng = {lat: myLat, lng: myLng}; 
+        var titleTwo = myData[i].name;
         var marker = new google.maps.Marker({
-            position: myLatLng2,
+            position: myLatLng,
             map: map,
             title: titleTwo,
+            
         });
-
+        console.log(myLng, myLat);
     };
 
 }
