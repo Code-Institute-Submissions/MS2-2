@@ -65,6 +65,7 @@ function markerMaker(map) {
         myLatLng = { lat: myLat, lng: myLng };
         var titleTwo = myData[i].name;
         var markerInfo = myData[i];
+        console.log(markerInfo);
         var marker = new google.maps.Marker({
             position: myLatLng,
             map: map,
@@ -73,9 +74,13 @@ function markerMaker(map) {
         var infowindow = new google.maps.InfoWindow({
         content: markerInfo});
 
-        marker.addListener('click', function () {
+      
+    };
+
+    marker.addListener('click', function () {
         infowindow.open(marker.get('map'), marker);
-    })
+    
+    });
     
 
         };
@@ -84,7 +89,7 @@ function markerMaker(map) {
     
 
 
-}
+
 
 
 //function markerMessage(marker, markerInfo) {
