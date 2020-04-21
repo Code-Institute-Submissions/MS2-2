@@ -14,8 +14,8 @@
 		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
 	<script src="assets/js/scripts.js" type="text/javascript"></script>
-    
-	<script type="text/javascript" src="assets/js/waypoints.json" ></script>
+
+	<script type="text/javascript" src="assets/js/waypoints.json"></script>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -31,22 +31,21 @@
 
 <body class="DayTime">
 	<header>
-		<nav class="navbar nav">
-			<ul class="nav nav-pills nav-style">
-				<li class="nav-item">
-					<a class="nav-link active" href="index.html">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="gallery.html">Gallery</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="register.html">Register</a>
-				</li>
-				<li class="nav-item"><button id="lightswitch" class="btn btn-dark">Day Time</button></li>
-			</ul>
-		</nav>
-		<h1 class="greeting-content" >Get Outside and Unwind!</h1>
+		<h1 class="greeting-content">Get Outside and Unwind!</h1>
 	</header>
+	<div class="pos-f-t">
+		<div class="collapse" id="navbarToggleExternalContent">
+			<div class="bg-dark p-4">
+				<h4 class="text-white">Collapsed content</h4>
+				<span class="text-muted">Toggleable via the navbar brand.</span>
+			</div>
+		</div>
+		<nav class="navbar navbar-dark bg-dark">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+		</nav>
+	</div>
 	<div id="greeting" class="modal fade  greeting" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
 		aria-hidden="true">
 		<div class="modal-dialog modal-sm">
@@ -55,6 +54,7 @@
 			</div>
 		</div>
 	</div>
+	<!--<button id="lightswitch" class="btn btn-dark">Day Time</button>-->
 	<div class="row maprow">
 		<div class="col-12 mapcol">
 			<div id="map">
@@ -62,7 +62,7 @@
 			</div>
 		</div>
 	</div>
- <hr class="break">
+	<hr class="break">
 	<div class="row">
 		<div class="col-12 information">
 			<!--credit for the section below to https://www.britannica.com/place/Appalachian-Mountains/Plant-and-animal-life & Wikipedia-->
@@ -103,14 +103,14 @@
 			</ul>
 		</div>
 	</div>
-<hr class="break">
-    <div class="row">
-            <div id="back3" class="col-12 back3">
+	<hr class="break">
+	<div class="row">
+		<div id="back3" class="col-12 back3">
 
-            </div> 
-    </div>
- <hr class="break">
-    <div class="row">
+		</div>
+	</div>
+	<hr class="break">
+	<div class="row">
 		<div class="col-12 information visible-sm visible-xs visible-md hidden-lg">
 			<h3 class="infohead">Points of Interest</h3>
 			<ol>
@@ -118,31 +118,36 @@
 					<span><a href="https://www.atlantatrails.com/hiking-trails/wooded-serenity-the-appalachian-trail-at-blood-mountain/">Blood Mountain, Georgia</a></span>
 				</li>
 				<li>
-					<p><a href="https://ashevilletrails.com/appalachian-trail-north-carolina/max-patch/">Max Patch, North Carolina</a></p>
+					<p><a href="https://ashevilletrails.com/appalachian-trail-north-carolina/max-patch/">Max Patch,
+							North Carolina</a></p>
 				</li>
 				<li>
 					<p><a href="https://ashevilletrails.com/roan-mountain/">The Roan Highlands, Tennessee</a></p>
 				</li>
 				<li>
-					<p><a href="https://www.visitroanokeva.com/things-to-do/outdoor-adventure/hiking-trails/triple-crown/">Dragon’s Tooth, McAfee Knob, and Tinker Cliffs, Virginia</a></p>
+					<p><a
+							href="https://www.visitroanokeva.com/things-to-do/outdoor-adventure/hiking-trails/triple-crown/">Dragon’s
+							Tooth, McAfee Knob, and Tinker Cliffs, Virginia</a></p>
 				</li>
 				<li>
-					<p><a href="https://www.outdoors.org/articles/amc-outdoors/mahoosuc-notch-mahoosuc-trail-appalachian-trail-longest-mile">Mahoosuc Notch, Maine</a></p>
+					<p><a
+							href="https://www.outdoors.org/articles/amc-outdoors/mahoosuc-notch-mahoosuc-trail-appalachian-trail-longest-mile">Mahoosuc
+							Notch, Maine</a></p>
 				</li>
 				<li>
 					<p><a href="https://www.summitpost.org/katahdin/150219">Mount Katahdin, Maine</a></p>
 				</li>
 			</ol>
 		</div>
-    </div>
- <hr class="break">
-    <div class="row">
-        <div id="back2" class="col-12 back2">
+	</div>
+	<hr class="break">
+	<div class="row">
+		<div id="back2" class="col-12 back2">
 
-        </div>
-    </div>
-     <hr class="break">
-        <div class="row">
+		</div>
+	</div>
+	<hr class="break">
+	<div class="row">
 		<div class="col-12 information">
 			<h3 class="infohead">Flora & Fauna</h3>
 			<ul>
@@ -191,36 +196,38 @@
 			<p></p>
 		</div>
 	</div>
-    <div id="ad1" class="row aDContent">
-        <div class="col-12 formIt">
-        <div class="jumbotron">
-            <h1>Staying on the trail?</h1>
-            <h2>We're here to help!</h2>
+	<div id="ad1" class="row aDContent">
+		<div class="col-12 formIt">
+			<div class="jumbotron">
+				<h1>Staying on the trail?</h1>
+				<h2>We're here to help!</h2>
 
-        </div>
-            <form>
-                 
-            </form>
-        </div>
-    </div>
+			</div>
+			<form>
+
+			</form>
+		</div>
+	</div>
 
 
 	<footer>
 		<div class="row">
 			<div class="space">
-			<div class="col-12 icons">
-            <i href="www.facebook.com" class="fab fa-facebook-square"></i>
-            <i href="www.instagram.com" class="fab fa-instagram"></i>
-            <i href="www.pinterest.com" class="fab fa-pinterest-square"></i>
-            <i href="www.reddit.com" class="fab fa-reddit-square"></i></div>
+				<div class="col-12 icons">
+					<i href="www.facebook.com" class="fab fa-facebook-square"></i>
+					<i href="www.instagram.com" class="fab fa-instagram"></i>
+					<i href="www.pinterest.com" class="fab fa-pinterest-square"></i>
+					<i href="www.reddit.com" class="fab fa-reddit-square"></i></div>
 			</div>
 		</div>
 
 	</footer>
-		
 
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV2rXpc-RvQizNTihXs0xXtVik0nRkmE8&libraries=places&callback=initMap" async defer></script>
-    
+
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV2rXpc-RvQizNTihXs0xXtVik0nRkmE8&libraries=places&callback=initMap"
+		async defer></script>
+
 
 </body>
 
