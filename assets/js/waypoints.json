@@ -324,15 +324,6 @@
     "elev": "1775 ft"
   },
   {
-    "type": "FEATURE",
-    "name": "Southern Boundary GSMNP (1800 ft)",
-    "lat": "",
-    "lon": "",
-    "to spgr": 163.3,
-    "to ktd": 2011.3,
-    "elev": "1800 ft"
-  },
-  {
     "type": "SHELTER",
     "name": "Mollies Ridge Shelter",
     "lat": 35.5458893,
@@ -475,15 +466,6 @@
     "to spgr": 234,
     "to ktd": 1940.6,
     "elev": "2600 ft"
-  },
-  {
-    "type": "FEATURE",
-    "name": "Eastern Boundary GSMNP (1900 ft)",
-    "lat": "",
-    "lon": "",
-    "to spgr": 234.9,
-    "to ktd": 1939.7,
-    "elev": "1900 ft"
   },
   {
     "type": "SHELTER",
@@ -1404,15 +1386,6 @@
     "elev": ""
   },
   {
-    "type": "FEATURE",
-    "name": "Southern Boundary SNP (2200 ft)",
-    "lat": "",
-    "lon": "",
-    "to spgr": 849.2,
-    "to ktd": 1325.4,
-    "elev": "2200 ft"
-  },
-  {
     "type": "SHELTER",
     "name": "Calf Mountain Shelter",
     "lat": 38.0855703,
@@ -1501,15 +1474,6 @@
     "to spgr": 942.1,
     "to ktd": 1232.5,
     "elev": "2480 ft"
-  },
-  {
-    "type": "FEATURE",
-    "name": "Northern Boundary SNP (2300 ft)",
-    "lat": "",
-    "lon": "",
-    "to spgr": 951.8,
-    "to ktd": 1222.8,
-    "elev": "2300 ft"
   },
   {
     "type": "SHELTER",
@@ -3142,7 +3106,7 @@
   },
   {
     "type": "TOWN",
-    "name": "Warren, HH 03279",
+    "name": "Warren, NH 03279",
     "lat": 43.92,
     "lon": -71.9,
     "to spgr": 1771.1,

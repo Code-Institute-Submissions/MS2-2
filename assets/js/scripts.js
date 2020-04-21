@@ -4,7 +4,7 @@
 $('#greeting').fadeOut(2000, function () {
     $(this).modal('hide');
 });
-
+$("#ad1").hide();
 $(document).ready(function () {
     $('#lightswitch').on("click", function () {
         if
@@ -45,7 +45,7 @@ $.getJSON('assets/js/waypoints.json', function (data) {
 //Credit for JSON file to SophiaKnows/Appalachian Trail Database hosted by SophiaKnows
 var marker;
 var myLatLng;
-var markerInfo;
+
 
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -64,15 +64,16 @@ function markerMaker(map) {
         var myLng = (myData[i].lon);
         myLatLng = { lat: myLat, lng: myLng };
         var titleTwo = myData[i].name;
-        var markerInfo = myData[i];
-        console.log(markerInfo);
         var marker = new google.maps.Marker({
             position: myLatLng,
             map: map,
             title: titleTwo,});
 
+        
+        var markerInfo = JSON.stringify(myData[i]);    
         var infowindow = new google.maps.InfoWindow({
-        content: markerInfo});
+        content: markerInfo}); 
+        
 
       
     };
