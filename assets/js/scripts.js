@@ -50,8 +50,8 @@ var markerInfo;
 
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 6,
-        center: { lat: 32.157, lng: -82.807 }
+        zoom: 8,
+        center: { lat: 34.626, lng: -84.193 }
     });
 
 
@@ -61,42 +61,25 @@ function initMap() {
 
 function markerMaker(map) {
     for (i = 0; i < myData.length; i++) {
-        var myLat = (myData[i].lat);
-        var myLng = (myData[i].lon);
+        let myLat = (myData[i].lat);
+        let myLng = (myData[i].lon);
         myLatLng = { lat: myLat, lng: myLng };
-        var titleTwo = myData[i].name;
-        var marker = new google.maps.Marker({
+        let titleTwo = myData[i].name;
+        let marker = new google.maps.Marker({
             position: myLatLng,
             map: map,
             title: titleTwo,});        
-        var markerContent = myData[i];
-        var markerInfo = '<div class="customMarker"><h4>' + markerContent.name + '</h4><h6> distance to Springer Mountain: ' + markerContent["to spgr"] + '</h6><h6> distance to Mt. Katahdin: ' + markerContent["to ktd"] +  '</h6></div>';    
-        var infowindow = new google.maps.InfoWindow({
+        let markerInfo = '<div class="customMarker"><h4>' + myData[i].name + '</h4><h6> distance to Springer Mountain: ' + myData[i]["to spgr"] + '</h6><h6> distance to Mt. Katahdin: ' + myData[i]["to ktd"] +  '</h6></div>';    
+        let infowindow = new google.maps.InfoWindow({
         content: markerInfo});
 
         marker.addListener('click', function () {
         infowindow.open(marker.get('map'), this);
          });
          
-    };
-
-  
-    
-   
-    
+    };   
 
         };
-
-    
-    
-
-
-
-
-
-//function markerMessage(marker, markerInfo) {
-   
-    //});
 
   
 
