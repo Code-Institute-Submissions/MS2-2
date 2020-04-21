@@ -113,6 +113,14 @@ div #map{
 .mapcol{
     padding: 1em;
 }
+.customMarker{
+    color: black;
+    font-family: Roboto, sans-serif;
+    background-color: #ffa052;
+}
+infowindow {
+     background-color: #ffa052;
+}
 /*footer*/
 i {
     font-size: 2em;

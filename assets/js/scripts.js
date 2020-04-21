@@ -39,13 +39,14 @@ $(document).ready(function () {
 var APIkey = "AIzaSyDV2rXpc-RvQizNTihXs0xXtVik0nRkmE8";
 var myData;
 
+
 $.getJSON('assets/js/waypoints.json', function (data) {
     myData = (data);
 });// adds JSON data to local variable
 //Credit for JSON file to SophiaKnows/Appalachian Trail Database hosted by SophiaKnows
 var marker;
 var myLatLng;
-
+var markerInfo;
 
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -67,21 +68,21 @@ function markerMaker(map) {
         var marker = new google.maps.Marker({
             position: myLatLng,
             map: map,
-            title: titleTwo,});
-
-        
-        var markerInfo = JSON.stringify(myData[i]);    
+            title: titleTwo,});        
+        var markerContent = myData[i];
+        var markerInfo = '<div class="customMarker"><h4>' + markerContent.name + '</h4><h6> distance to Springer Mountain: ' + markerContent["to spgr"] + '</h6><h6> distance to Mt. Katahdin: ' + markerContent["to ktd"] +  '</h6></div>';    
         var infowindow = new google.maps.InfoWindow({
-        content: markerInfo}); 
-        
+        content: markerInfo});
 
-      
+        marker.addListener('click', function () {
+        infowindow.open(marker.get('map'), this);
+         });
+         
     };
 
-    marker.addListener('click', function () {
-        infowindow.open(marker.get('map'), marker);
+  
     
-    });
+   
     
 
         };
