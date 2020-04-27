@@ -3,7 +3,11 @@
 /*HTML*/
 
 /*body*/
-
+.tupperware{
+    width: 66%;
+    align-content: left;
+    padding: 2em;
+}
 
 /*General Use*/
 .DayTime {
@@ -53,6 +57,9 @@
 }
 
 /*header*/
+.bigGreet{
+    
+}
 .greeting{
     background-image: url(/assets/media/headerimage.jpg);
     background-size: cover;
