@@ -95,7 +95,12 @@ header {
 }
 .formIt{
     color: #f97f1b;
+
+}
+#triplist{
     text-align: center;
+    min-height: 50%;
+    min-width: 66%;
 }
 div .helper{
     background-color: rgba(0, 0, 0, .55);
@@ -123,9 +128,9 @@ div #map{
 .customMarker{
     color: black;
     font-family: Roboto, sans-serif;
-    background-color: #ffa052;
+    
 }
-infowindow {
+.infowindow {
      background-color: #ffa052;
 }
 /*footer*/
