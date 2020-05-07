@@ -8,6 +8,11 @@
     align-content: left;
     padding: 2em;
 }
+.tupperwareTwo{
+    width: 33%;
+    align-content: right;
+    padding: 2em;
+}
 
 /*General Use*/
 .DayTime {
@@ -133,12 +138,29 @@ div #map{
 .infowindow {
      background-color: #ffa052;
 }
-.lister{
 
-}
 .add{
     font-size: inherit;
+    
 }
+
+.add:hover{
+    color: purple;
+}
+.add:visited{
+    color: orange;
+}
+.lister{
+    background-image: url("#");
+    
+
+
+}
+.listerlist{
+    color: black;
+    font-family: Roboto, sans-serif;
+}   
+
 /*footer*/
 i {
     font-size: 2em;

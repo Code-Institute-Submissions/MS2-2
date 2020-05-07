@@ -81,6 +81,12 @@ function markerMaker(map) {
 
         };
 
+// start list functions
+
+$(".add").click(function(){
+    
+});
+
 
 
 
