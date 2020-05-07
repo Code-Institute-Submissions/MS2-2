@@ -133,6 +133,12 @@ div #map{
 .infowindow {
      background-color: #ffa052;
 }
+.lister{
+
+}
+.add{
+    font-size: inherit;
+}
 /*footer*/
 i {
     font-size: 2em;
