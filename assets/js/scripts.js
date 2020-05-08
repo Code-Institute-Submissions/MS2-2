@@ -1,5 +1,5 @@
 //$(document).ready(function () {
-   // $('#greeting').modal('show');
+// $('#greeting').modal('show');
 //});
 $('#greeting').fadeOut(2000, function () {
     $(this).modal('hide');
@@ -68,32 +68,40 @@ function markerMaker(map) {
         let marker = new google.maps.Marker({
             position: myLatLng,
             map: map,
-            title: titleTwo,});        
-        let markerInfo = '<div class="customMarker"><h4>' + myData[i].name + '<i class="fas fa-plus-circle add"></i>' + '</h4><h6> distance to Springer Mountain: ' + myData[i]["to spgr"] + '</h6><h6> distance to Mt. Katahdin: ' + myData[i]["to ktd"] +  '</h6></div>';    
+            title: titleTwo,
+        });
+        let markerInfo = '<div class="customMarker"><h4>' + myData[i].name + '<i id="add' + [i] +'"  class="fas fa-plus-circle add"></i>' + '</h4><h6> distance to Springer Mountain: ' + myData[i]["to spgr"] + '</h6><h6> distance to Mt. Katahdin: ' + myData[i]["to ktd"] + '</h6></div>';
         let infowindow = new google.maps.InfoWindow({
-        content: markerInfo});
+            content: markerInfo
+        });
 
         marker.addListener('click', function () {
-        infowindow.open(marker.get('map'), this);
-         });
-         
-    };   
+            infowindow.open(marker.get('map'), this);
+        });
+       
+   
+        
+                
+    };
+ $(document).ready(function(){
+        document.getElementById(("add" + [i])).addListener('click', function () {
+            this.append(markerInfo);
+        });
+ });
 
-        };
+};
 
 // start list functions
 
-$(".add").click(function(){
-    
-});
 
 
 
 
 
 
- 
-  
+
+
+
 
 
 
