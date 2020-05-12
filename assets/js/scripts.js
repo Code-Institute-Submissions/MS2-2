@@ -79,15 +79,19 @@ function markerMaker(map) {
             infowindow.open(marker.get('map'), this);
         });
        
-   
-        
+      
+          $("add").on('click', function(){ 
+              let ol = document.getElementById("list");
+              let li = document.createElement("li");
+              let content = JSON.stringify(myData[i]); 
+              $(li).append(content)
+
+            $(ol).append(li);
+           
+        });
                 
     };
- $(document).ready(function(){
-        document.getElementById(("add" + [i])).addListener('click', function () {
-            this.append(markerInfo);
-        });
- });
+ 
 
 };
 
