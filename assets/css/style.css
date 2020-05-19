@@ -136,6 +136,8 @@ div #map{
     font-family: Roboto, sans-serif;
     
 }
+
+
 .infowindow {
      background-color: #ffa052;
 }
@@ -166,6 +168,7 @@ div #map{
 .listerlist{
     color: black;
     font-family: Indie Flower, sans-serif;
+    font-size: 1em;
 }   
 
 /*footer*/
