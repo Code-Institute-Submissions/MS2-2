@@ -90,14 +90,16 @@ function markerMaker(map) {
 
 
        
-            $("#list").append('<li class="listItem"><span>' + titleTwo + ': '+'</span>'  + '<span>'+'Lat: ' + myLat + '</span>'+ '<span>' + "Lng: "+ myLng  +  '</span></li>');
+            $("#list").append('<li class="listItem"><span>' + titleTwo + ': '+'</span>'  + '<span>'+'Lat: ' + myLat + '</span>'+ '<span>' + "Lng: "+ myLng  +  '+"  <i id="trash" class="fas fa-trash"></i>"</span></li>');
         });
 
     }
 
 }
 
-
+$("#trash").on('click', function(){
+    this.remove();
+});
 
 
 //marker.addListener('click', function () {
