@@ -47,6 +47,7 @@ $.getJSON('assets/js/waypoints.json', function (data) {
 var marker;
 var myLatLng;
 var markerInfo;
+var buttonBoy;
 
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -65,50 +66,75 @@ function markerMaker(map) {
         let myLng = (myData[i].lon);
         myLatLng = { lat: myLat, lng: myLng };
         let titleTwo = myData[i].name;
+        let listItem = myData[i];
+        let buttonBoy = '<button id="sam"><i class="fas fa-plus-circle add"></i></button>';
+
         let marker = new google.maps.Marker({
             position: myLatLng,
             map: map,
+            id: i,
             title: titleTwo,
         });
-        var markerInfo = '<div id="customMarker" class="customMarker"><h4>' + myData[i].name + '<button id="add" ><i class="fas fa-plus-circle add"></i></button>' + '</h4><h6> distance to Springer Mountain: ' + myData[i]["to spgr"] + '</h6><h6> distance to Mt. Katahdin: ' + myData[i]["to ktd"] + '</h6></div>';
-        let infowindow = new google.maps.InfoWindow({
+        let markerInfo = '<div  class="customMarker"><h4>' + myData[i].name + buttonBoy + '</h4><h6> distance to Springer Mountain: ' + myData[i]["to spgr"] + '</h6><h6> distance to Mt. Katahdin: ' + myData[i]["to ktd"] + '</h6></div>';
+        let InfoWindow = new google.maps.InfoWindow({
             content: markerInfo
         });
 
-        marker.addListener('click', function () {
-            infowindow.open(marker.get('map'), this);
 
-       add.addListener('click', function(){
-            let li = "<li>" + markerInfo + "</li>";
-            console.log(li);
-            $('#list').append(li);
-       });
+       
 
+    function tryThis(){
+        function isInfoWindowOpen(InfoWindow) {
+            var map = InfoWindow.getMap();
+            return (map !== null && typeof map !== "undefined");
+        }
+
+        if (isInfoWindowOpen(InfoWindow)) {
+            $("#sam").on('click', function(){
+                $('#list').append(markerInfo)
             });
-        
-    
+            // do something if it is open
+        } else {
+            console.log('nope')
+            // do something if it is closed
+        }
 
-
-
+        };
 
     };
+     marker.addListener('click', function () {
+
+            InfoWindow.open(marker.get('map'), this);
+
+
+        tryThis();
+            // $("#list").append(marker.title);
+        });
 
 };
-//$(document).ready(function (){
- //$('.add').on('click', function () {
+/*$("#sam").on("click", function () {
+    $("#list").append('<li>' + this.marker + '</li>');
+});*/
+/*$(document).ready( function(){
+    document.getElementById("#sam").on( 'click', function(){
+        let listItem = document.getElementsByClassName('.customMarker').id;
+        let listyListItem = myData[listItem];
 
-            
- //       });
-   // });
-// start list functions
+        let li = "<li>" + listyListItem + "</li>";
+        console.log(li);
+        $('#list').append(li);
+
+    });
+
+});*/
 
 
 
 
 
-
-
-
+//marker.addListener('click', function () {
+    // InfoWindow.open(marker.get('map'), this); 
+    // $("#list").append(marker.title); });
 
 
 
