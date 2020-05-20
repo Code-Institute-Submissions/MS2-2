@@ -1,4 +1,9 @@
-
+* {
+    border: red 1px solid;
+}
+.container {
+    margin-bottom: 0;
+}
 
 /*HTML*/
 
@@ -16,6 +21,7 @@
 }
 
 /*General Use*/
+
 .DayTime {
     background-image: url("/assets/media/background.jpg");
     background-attachment: fixed;
@@ -25,6 +31,7 @@
     padding:1em;    
     min-width: 100vh;
     min-height: 100vh;
+    
 }
 
 
@@ -136,11 +143,11 @@ i {
 /*information section*/
 .information{
     background-image: url("/assets/media/paper.jpg");
-     /*background-color: #2D4934;*/
      border-radius: 4px;
      padding: 1em;    
-     color: #f9f4f0;
+     color: black;
      width: 99vh;
      margin-left: auto;
      margin-right: auto;
+     text-align: center;
 }
