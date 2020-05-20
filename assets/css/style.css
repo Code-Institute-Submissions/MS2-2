@@ -22,40 +22,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     font-family: Roboto, sans-serif;
-    padding:5px;
-    margin: 0em 1em 0em 1em;
-    z-index: -1;
+    padding:1em;    
+    min-width: 100vh;
+    min-height: 100vh;
 }
 
-.afterDark{
-    background-image: url("/assets/media/campfire.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: Roboto, sans-serif;
-    padding:5px;
-    margin: 0em 1em 0em 1em;
-    z-index: -1;
-}
-.back2{
-    background-image: url("/assets/media/trail1.jpg");
-    background-attachment: scroll;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 38rem;
-    min-width: 100%;
-     border: 3px #799573 solid;
-}
-.back3{
-    background-image: url("/assets/media/trail2.jpg");
-    background-attachment: scroll;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 38rem;
-    min-width: 100%;
-     border: 3px #799573 solid;
 
-}
  .break {
      border: 3px #f97f1b solid;
      border-radius: 5px;
@@ -63,9 +35,7 @@
 }
 
 /*header*/
-.bigGreet{
-    
-}
+
 .greeting{
     background-image: url(/assets/media/headerimage.jpg);
     background-size: cover;
@@ -91,23 +61,8 @@ header {
     
 }
 /* dark mode */
-.switch{
-    background-color: yellow;
 
-}
-.aDcontent{
-    background-color: #ffffff;
-    
-}
-.formIt{
-    color: #f97f1b;
 
-}
-#triplist{
-    text-align: center;
-    min-height: 50%;
-    min-width: 66%;
-}
 div .helper{
     background-color: rgba(0, 0, 0, .55);
     width: 75vh;
@@ -138,21 +93,11 @@ div #map{
 }
 
 
-.infowindow {
-     background-color: #ffa052;
-}
 
-.add{
-    font-size: inherit;
-    
-}
 
-.add:hover{
-    color: purple;
-}
-.add:visited{
-    color: orange;
-}
+
+
+
 .lister{
     background-image: url("/assets/media/paper.jpg");
     height: 100%;
@@ -184,22 +129,18 @@ i {
     display: inline-block;
     padding: 0;
 }
-.space{
+ .space{
     margin-left: auto;
     margin-right: auto;
 }
 /*information section*/
 .information{
-     background-color: #2D4934;
-     border-radius: 3em;
-     display: inline-block;
-     padding: 2em;
-     border: 3px solid #799573;
+    background-image: url("/assets/media/paper.jpg");
+     /*background-color: #2D4934;*/
+     border-radius: 4px;
+     padding: 1em;    
      color: #f9f4f0;
-}
-.interest{
-    min-width: 100%;
-}
-.infohead{
-    text-align: center;
+     width: 99vh;
+     margin-left: auto;
+     margin-right: auto;
 }

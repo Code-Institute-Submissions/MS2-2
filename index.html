@@ -8,7 +8,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
-	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Roboto&family=Indie+Flower&display=swap"
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Roboto&family=Indie+Flower&display=swap"
 		rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.4.1.js"
 		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
@@ -29,90 +30,79 @@
 	<title>Appalachian Trail Map</title>
 </head>
 
-<body class="DayTime">
-	<header>
-		<div>
-			<div class="bigGreet">
-				<h1 class="greeting-content">Get Outside and Unwind!</h1>
-			</div>
-
-		</div>
-	</header>
-	<div class="row">
-		<div class="tupperware col-8">
-
-			<div id="greeting" class="modal fade  greeting" tabindex="-1" role="dialog"
-				aria-labelledby="myLargeModalLabel" aria-hidden="true">
-				<div class="modal-dialog modal-sm">
-					<div class="greeting-content">
-						<p class="greetme">The Trails Are Calling</p>
-					</div>
+<body>
+	<div class="DayTime">
+		<header>
+			<div>
+				<div class="bigGreet">
+					<h1 class="greeting-content">Get Outside and Unwind!</h1>
 				</div>
+
 			</div>
-
-			<div class="row maprow">
-				<div class="col-12 mapcol">
-					<div id="map">
-
-					</div>
-				</div>
-			</div>
-
-			<div id="ad1" class="row aDContent">
-				<div class="col-12 formIt">
-					<form >
-						<input type="text" id="triplist" name="triplist">
-						<button id="lightswitch" class="btn btn-dark">Day Time</button>
-
-
-					</form>
-				</div>
-			</div>
-
-
-		</div>
-		<div class="tupperwareTwo col-4">
-			<div class="row">
-				<div class="col-12 mapcol">
-					<div class="lister">
-						<ol id="list" class="listerlist" >
-
-						</ol>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<hr>
-
-	<hr>
-
-	<hr>
-
-	<hr>
-
-	<hr>
-
-	<footer>
+		</header>
 		<div class="row">
-			<div class="space">
-				<div class="col-12 icons">
-					<i href="www.facebook.com" class="fab fa-facebook-square"></i>
-					<i href="www.instagram.com" class="fab fa-instagram"></i>
-					<i href="www.pinterest.com" class="fab fa-pinterest-square"></i>
-					<i href="www.reddit.com" class="fab fa-reddit-square"></i></div>
+			<div class="tupperware col-8">
+
+				<div id="greeting" class="modal fade  greeting" tabindex="-1" role="dialog"
+					aria-labelledby="myLargeModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-sm">
+						<div class="greeting-content">
+							<p class="greetme">The Trails Are Calling</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row maprow">
+					<div class="col-12 mapcol">
+						<div id="map">
+
+						</div>
+					</div>
+				</div>
+
+
+
+
+			</div>
+			<div class="tupperwareTwo col-4">
+				<div class="row">
+					<div class="col-12 mapcol">
+						<div class="lister">
+							<ol id="list" class="listerlist">
+
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="information">
+			<div class="col-12 space">
 			</div>
 		</div>
 
-	</footer>
+		<hr>
+
+		<footer>
+			<div class="row">
+				<div class="space">
+					<div class="col-12 icons">
+						<i href="www.facebook.com" class="fab fa-facebook-square"></i>
+						<i href="www.instagram.com" class="fab fa-instagram"></i>
+						<i href="www.pinterest.com" class="fab fa-pinterest-square"></i>
+						<i href="www.reddit.com" class="fab fa-reddit-square"></i></div>
+				</div>
+			</div>
+
+		</footer>
 
 
-	<script
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV2rXpc-RvQizNTihXs0xXtVik0nRkmE8&libraries=places&callback=initMap"
-		async defer></script>
+		<script
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV2rXpc-RvQizNTihXs0xXtVik0nRkmE8&libraries=places&callback=initMap"
+			async defer></script>
 
 
+	</div>
 </body>
 
 </html>

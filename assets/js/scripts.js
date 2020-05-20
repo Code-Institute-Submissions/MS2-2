@@ -1,68 +1,25 @@
 
-$(document).ready(function () {
-    $('#lightswitch').on("click", function () {
-        if
-            ($("body").hasClass("DayTime")) {
-            $('body').removeClass("DayTime").addClass("afterDark");
-            $('#lightswitch').removeClass("btn-dark").addClass("btn-light");
-            $("#back3").hide();
-            $("#back2").hide();
-            $("hr").hide();
-            $("#ad1").show();
-            $('#lightswitch').text("After Dark");
-            $("body").attr('id', 'dark');
-            $("div.information").fadeOut("slow");
-
-        }
-        else {
-            $('body').removeClass("afterDark").addClass("DayTime");
-            $('#lightswitch').removeClass("btn-light").addClass("btn-dark");
-            $("#ad1").hide();
-            $("#back3").show();
-            $("#back2").show();
-            $("hr").show();
-            $('#lightswitch').text("Day Time");
-            $("body").attr('id', 'light');
-            $("div.information").fadeIn("slow");
-        }
-    })
-});
-
-
 // maps code below
 var APIkey = "AIzaSyDV2rXpc-RvQizNTihXs0xXtVik0nRkmE8";
-var myData;
-
-
+//var myData;
 $.getJSON('assets/js/waypoints.json', function (data) {
     myData = (data);
 });// adds JSON data to local variable
 //Credit for JSON file to SophiaKnows/Appalachian Trail Database hosted by SophiaKnows
-var marker;
-var myLatLng;
-var markerInfo;
-var buttonBoy;
-
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 8,
         center: { lat: 34.626, lng: -84.193 }
     });
-
-
     markerMaker(map);
-
 };
-
 function markerMaker(map) {
     for (i = 0; i < myData.length; i++) {
         let myLat = (myData[i].lat);
         let myLng = (myData[i].lon);
         myLatLng = { lat: myLat, lng: myLng };
-        let titleTwo = myData[i].name;
-        
+        let titleTwo = myData[i].name;        
         let buttonBoy = '<button onclick="addMe(event)">List Me!</button>';
-
         let marker = new google.maps.Marker({
             position: myLatLng,
             map: map,
@@ -74,33 +31,19 @@ function markerMaker(map) {
             content: markerInfo
         });
 
-
-       
-
-
      marker.addListener('click', function () {
-
             InfoWindow.open(marker.get('map'), this);
         });
-
     }
-
 }
-
-
-var li;
 function addMe(event){
     //special thanks to Samantha_CI at tutor support for helping me through this!  she's awesome.
-    //console.log(event.target.parentElement.previousSibling.previousSibling);
-
-
-     let answer = '<div>' + event.target.parentElement.previousSibling.previousSibling.innerHTML + '<button onclick="removeMe(event)">Remove</button>' + '</div>';
+    let answer = '<div>' + event.target.parentElement.previousSibling.previousSibling.innerHTML + '<button onclick="removeMe(event)">Remove</button>' + '</div>';
     let li = '<li>' + answer + '</li>'
     $('#list').append(li);
 }
-function removeMe(event){
-    //$(event.target.parentElement).remove();
-    console.log(event.target.parentNode.nextSibling);
+function removeMe(event){   
+    $(event.target.parentNode.parentNode).remove();  
 }
 
 
