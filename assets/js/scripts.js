@@ -67,7 +67,7 @@ function markerMaker(map) {
         myLatLng = { lat: myLat, lng: myLng };
         let titleTwo = myData[i].name;
         
-        let buttonBoy = '<button id="sam"><i class="fas fa-plus-circle add"></i></button>';
+        let buttonBoy = '<button onclick="addMe(event)" id="sam"><i class="fas fa-plus-circle add"></i></button>';
 
         let marker = new google.maps.Marker({
             position: myLatLng,
@@ -75,7 +75,7 @@ function markerMaker(map) {
             id: i,
             title: titleTwo,
         });
-        let markerInfo = '<div  class="customMarker"><h4>' + myData[i].name  + '</h4><h6> distance to Springer Mountain: ' + myData[i]["to spgr"] + '</h6><h6> distance to Mt. Katahdin: ' + myData[i]["to ktd"] + '</h6></div>';
+        let markerInfo = '<div  class="customMarker"><h4>' + myData[i].name  + ' ' + '</h4><h6> distance to Springer Mountain: ' + myData[i]["to spgr"] + '</h6><h6> distance to Mt. Katahdin: ' + myData[i]["to ktd"] + '</h6></div> <div>'   + buttonBoy + '</div>';
         let InfoWindow = new google.maps.InfoWindow({
             content: markerInfo
         });
@@ -90,7 +90,7 @@ function markerMaker(map) {
 
 
        
-            $("#list").append('<li class="listItem"><span>' + titleTwo + ': '+'</span>'  + '<span>'+'Lat: ' + myLat + '</span>'+ '<span>' + "Lng: "+ myLng  +  '+"  <i id="trash" class="fas fa-trash"></i>"</span></li>');
+            //$("#list").append('<li class="listItem"><span>' + titleTwo + ': '+'</span>'  + '<span>'+'Lat: ' + myLat + '</span> '+ ' <span>' + " Lng: "+ myLng  +  '+"  <i id="trash" class="fas fa-trash"></i>"</span></li>');
         });
 
     }
@@ -98,8 +98,16 @@ function markerMaker(map) {
 }
 
 $("#trash").on('click', function(){
-    this.remove();
+    $('#listItem').remove(this);
 });
+
+function addMe(event){
+    //special thanks to Samantha_CI at tutor support for helping me through this!  shes awesome.
+    //console.log(event.target.parentElement.previousSibling.previousSibling);
+     let answer = event.target.parentElement.previousSibling.previousSibling.innerHTML;
+    let li = '<li>' + answer + '</li>'
+    $('#list').append(li);
+}
 
 
 //marker.addListener('click', function () {
