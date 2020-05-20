@@ -1,10 +1,4 @@
-//$(document).ready(function () {
-// $('#greeting').modal('show');
-//});
-$('#greeting').fadeOut(2000, function () {
-    $(this).modal('hide');
-});
-$("#ad1").hide();
+
 $(document).ready(function () {
     $('#lightswitch').on("click", function () {
         if
@@ -67,7 +61,7 @@ function markerMaker(map) {
         myLatLng = { lat: myLat, lng: myLng };
         let titleTwo = myData[i].name;
         
-        let buttonBoy = '<button onclick="addMe(event)" id="sam"><i class="fas fa-plus-circle add"></i></button>';
+        let buttonBoy = '<button onclick="addMe(event)">List Me!</button>';
 
         let marker = new google.maps.Marker({
             position: myLatLng,
@@ -87,32 +81,29 @@ function markerMaker(map) {
      marker.addListener('click', function () {
 
             InfoWindow.open(marker.get('map'), this);
-
-
-       
-            //$("#list").append('<li class="listItem"><span>' + titleTwo + ': '+'</span>'  + '<span>'+'Lat: ' + myLat + '</span> '+ ' <span>' + " Lng: "+ myLng  +  '+"  <i id="trash" class="fas fa-trash"></i>"</span></li>');
         });
 
     }
 
 }
 
-$("#trash").on('click', function(){
-    $('#listItem').remove(this);
-});
 
+var li;
 function addMe(event){
-    //special thanks to Samantha_CI at tutor support for helping me through this!  shes awesome.
+    //special thanks to Samantha_CI at tutor support for helping me through this!  she's awesome.
     //console.log(event.target.parentElement.previousSibling.previousSibling);
-     let answer = event.target.parentElement.previousSibling.previousSibling.innerHTML;
+
+
+     let answer = '<div>' + event.target.parentElement.previousSibling.previousSibling.innerHTML + '<button onclick="removeMe(event)">Remove</button>' + '</div>';
     let li = '<li>' + answer + '</li>'
     $('#list').append(li);
 }
+function removeMe(event){
+    //$(event.target.parentElement).remove();
+    console.log(event.target.parentNode.nextSibling);
+}
 
 
-//marker.addListener('click', function () {
-    // InfoWindow.open(marker.get('map'), this); 
-    // $("#list").append(marker.title); });
 
 
 
