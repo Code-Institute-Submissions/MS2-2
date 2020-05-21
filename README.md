@@ -32,18 +32,18 @@ The project implements the Google Maps API with an external waypoint list.
 
 
  
-### Existing Features
+###Existing Features
 - Each marker has an "add" button to append it to the list element and a "remove" button to clear it off of the list.
  For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
 
 
 
-### Features Left to Implement
+###Features Left to Implement
 - I was working with a local storage version but couldnt get a working version going in time but it will be added in the future.
 
 - An option to email the list to the user after they've created it along with lat and lng point for users with outdoors GPS units
 
-## Technologies Used
+##Technologies Used
 
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
@@ -57,54 +57,60 @@ In this section, you should mention all of the languages, frameworks, libraries,
     - The project uses **JavaScript** to add interactivity to the project.
 - [Google Maps API](https://developers.google.com/maps/documentation)
     - The project uses the **Maps API** to incorporate Google's world famous maps utility.
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+- [Google Fonts](https://fonts.google.com/)
+    - The project uses **Google Fonts** to add style to the text of the project.
+- [FontAwesome](https://https://fontawesome.com/)
+    - The project uses **FontAwesome** to add style to the links and general good looks to the project.
+- [BootStrap](https://getbootstrap.com/)
+    - The project uses **BootStrap** to add simple organization and mobile reactivity to the project.
+- [JSON](https://en.wikipedia.org/wiki/JSON)
+    - The project uses **JSON** to add standardized object storage for simple iteration.
+- [GitHub](https://github.com/)
+    - The project uses **GitHub** for storage and hosting purposes.
+- [GitPod](https://gitpod.com/)
+    - The project uses **Gitpod** for a streamlined streamable IDE.
+ - [Git](https://git-scm.com/)
+    - The project uses **Git** for version control.
 
+##Testing
 
+HTML and CSS were validated via W3C's free utility at https://validator.w3.org/.
 
+The JavaScript file was validated via https://codebeautify.org/jsvalidate.
 
-## Testing
+###list element 
+- attempted to add the maximum number of elements to break the list on both mobile and desktop, it responds well on both.
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+###Maps iteration
+- attempted to drag and drop markers as well as swap from satellite to terrain views and open as many markers as possible. While it can get cluttered it does not break.
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+###Responsivity
+- used https://responsivetesttool.com, https://responsivedesignchecker.com, and the internal Chrome inspect tools to check for breakpoints on the mobile views. The project maintains its integrity from the smallest to largest resolutions available in the tools.
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+####Interesting Bugs
+- The first version of the "remove" function left the list number as an artifact on the #list element and it was solved via DOM traversal and a few hours with the console in chrome.
+- it took a while to build the iteration loop due to the differences between let and var, leading to the same information on every marker. @everynet_mentor on slack told me about this in the past and thats what led to the solution.
+- quite a lot of whitespace issues due to the way the 'height' attribute is calculated, took a lot of time in the computed elements section of the console in chrome to solve.
 
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
+-----
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+the site is hosted by Github Pages:
+- all media links were changed to reflect the correct filepaths for display purposes.
+- navigate to the settings portion of the repository and request hosting, the site should be live in a few moments automatically and GitHub will supply a link where the hosting option was from there on out unless changes are made and the process will need to be repeated. 
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
-
-In addition, if it is not obvious, you should also describe how to run your code locally.
-
-
-## Credits
+###Running locally
+- under the main portion of the repository click the clone/download button to get your own copy of the project.
+- if running locally, download the package and be sure to maintain the original structure of the filetree as listed on the repository, once downloaded, open index.html in your preferred HTML viewer.
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+- the waypoint array was orginally dowloaded as a .csv file from SophiaKnows (http://www.sophiaknows.com/atdb/) and coverted via (https://csvjson.com/csv2json).
 
 ### Media
-- The photos used in this site were obtained from ...
+photos were obtained via https://www.unsplash.com
 
 ### Acknowledgements
 
-- I received inspiration for this project from X
+special credit goes to Samantha at tutor support for helping me through the e.target functions. 
