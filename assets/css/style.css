@@ -4,7 +4,11 @@
 .container {
     margin-bottom: 0;
 }
-
+.row{
+    margin-left: 0;
+    margin-right: 0;
+    overflow-x: hidden;
+}
 /*HTML*/
 
 /*body*/
@@ -31,6 +35,12 @@
     min-height: 100vh;
     
 }
+@media only screen and (max-width: 600px) {
+  .DayTime {
+    overflow: hidden;
+  }
+}
+
 
 
  .break {
