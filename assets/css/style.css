@@ -3,6 +3,7 @@
     background-image: url("../media/banner.PNG");
     background-size: contain;
     height: 8em;
+    border-radius: .25em;
 }
 
 .greeting{
@@ -42,7 +43,7 @@ div #map{
     
     min-height: 360px;
     padding: 2em; 
-    border-radius: 4px;
+    border-radius: .25em;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
@@ -60,14 +61,14 @@ div #map{
 /*information section*/
 .information{
     background-image: url("../media/paper.jpg");
-     border-radius: 4px;
-     padding: 1em;    
-     color: black;     
-     margin-left: auto;
-     margin-right: auto;
-     text-align: center;
-     font-size: 1.5em;
-     font-family: Lato, sans-serif;
+    border-radius: .25em;
+    padding: 1em;    
+    color: black;     
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: Lato, sans-serif;
 }
 .greeting2{
     text-align: center;
@@ -79,13 +80,13 @@ div #map{
 }
 .break{
     border: .05em solid black;
-    border-radius: 4px;
+    border-radius: .25em;
 }
 .lister{
     background-image: url("../media/paper.jpg");
     
     min-height: 360px;
-    border-radius: 4px;
+    border-radius: .25em;
     margin-left: auto;
     margin-right: auto;
     margin: 0em 1em 0em 1em;
