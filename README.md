@@ -25,6 +25,21 @@ as an employer, id like to review Datum's work and have a method that leads to h
 
 i wanted something simple and clean that showed some nature, the wireframes i used can be found below. 
 
+
+![GitHub Logo](/wireframes/desktop.png)
+Format: ![Desktop Wireframe](url)
+
+
+![GitHub Logo](/wireframes/tablet_view.png)
+Format: ![Mobile](url)
+
+
+![GitHub Logo](/wireframes/Mobile.png)
+Format: ![Tablet](url)
+
+
+
+
 ### Features
 
 The project implements the Google Maps API with an external waypoint list.
