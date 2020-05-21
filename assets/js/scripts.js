@@ -18,7 +18,7 @@ function markerMaker(map) {
         let myLat = (myData[i].lat);
         let myLng = (myData[i].lon);
         myLatLng = { lat: myLat, lng: myLng };
-        let titleTwo = myData[i].name;        
+        let titleTwo = myData[i].name;
         let buttonBoy = '<button onclick="addMe(event)">List Me!</button>';
         let marker = new google.maps.Marker({
             position: myLatLng,
@@ -26,28 +26,51 @@ function markerMaker(map) {
             id: i,
             title: titleTwo,
         });
-        let markerInfo = '<div  class="customMarker"><h4>' + myData[i].name  + ' ' + '</h4><h6> distance to Springer Mountain: ' + myData[i]["to spgr"] + '</h6><h6> distance to Mt. Katahdin: ' + myData[i]["to ktd"] + '</h6></div> <div>'   + buttonBoy + '</div>';
+        let markerInfo = '<div  class="customMarker"><h4>' + myData[i].name + ' ' + '</h4><h6> distance to Springer Mountain: ' + myData[i]["to spgr"] + '</h6><h6> distance to Mt. Katahdin: ' + myData[i]["to ktd"] + '</h6></div> <div>' + buttonBoy + '</div>';
         let InfoWindow = new google.maps.InfoWindow({
             content: markerInfo
         });
 
-     marker.addListener('click', function () {
+        marker.addListener('click', function () {
             InfoWindow.open(marker.get('map'), this);
         });
     }
 }
-function addMe(event){
+function addMe(event) {
     //special thanks to Samantha_CI at tutor support for helping me through this!  she's awesome.
     let answer = '<div>' + event.target.parentElement.previousSibling.previousSibling.innerHTML + '<button onclick="removeMe(event)">Remove</button>' + '</div>';
     let li = '<li>' + answer + '</li>'
     $('#list').append(li);
+    if (typeof (Storage) !== "undefined") {
+        localStorage.setItem("list", document.getElementById('list'));
+    }
+    else {
+        console.log('No local Storage access.');
+        console.log(localStorage.getItem('list'));
+
+    }
 }
-function removeMe(event){   
-    $(event.target.parentNode.parentNode).remove();  
+function removeMe(event) {
+    $(event.target.parentNode.parentNode).remove();
 }
 
+$(document).ready(function () {
+    if (localStorage.getItem('list').length > 0) {
+        document.getElementById('list') == localStorage.list;
+    }
+    else {
+        console.log('nothing to see here');
+    }
+});
 
+if (typeof (Storage) !== "undefined") {
+    localStorage.setItem("list", document.getElementById('list'));
+}
+else {
+    console.log('No local Storage access.');
+    console.log(localStorage.getItem('list'));
 
+}
 
 
 
