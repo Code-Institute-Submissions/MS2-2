@@ -3,7 +3,7 @@
 var APIkey = "AIzaSyDV2rXpc-RvQizNTihXs0xXtVik0nRkmE8";
 //var myData;
 $.getJSON('assets/js/waypoints.json', function (data) {
-    myData = (data);
+    myData = data;
 });// adds JSON data to local variable
 //Credit for JSON file to SophiaKnows/Appalachian Trail Database hosted by SophiaKnows
 function initMap() {
@@ -13,6 +13,7 @@ function initMap() {
     });
     markerMaker(map);
 };
+//iterates through waypoints.JSON and creates custom markers for each object
 function markerMaker(map) {
     for (i = 0; i < myData.length; i++) {
         let myLat = (myData[i].lat);
@@ -30,12 +31,13 @@ function markerMaker(map) {
         let InfoWindow = new google.maps.InfoWindow({
             content: markerInfo
         });
-
+        //opens marker when clicked
         marker.addListener('click', function () {
             InfoWindow.open(marker.get('map'), this);
         });
     }
 }
+//adds functionality to add and remove marker information from #list using event targets and DOM traversal
 function addMe(event) {
     //special thanks to Samantha_CI at tutor support for helping me through this!  she's awesome.
     let answer = '<div>' + event.target.parentElement.previousSibling.previousSibling.innerHTML + '<button onClick="removeMe(event)" type="button" class="btn btn-danger">Remove</button>' + '</div>';
