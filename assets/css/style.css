@@ -56,19 +56,6 @@ div #map{
 }
 
 
-/*footer*/
-.footy{
-    background-color: #85734a;
-    padding-top: 1em;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-}
-.thicc {
-    font-size: 5em;
-    color: black;
-}
 
 /*information section*/
 .information{
@@ -109,4 +96,17 @@ div #map{
     color: black;
     font-family: 'Indie Flower', sans-serif;
     font-size: 1em;
-}   
+}  
+/*footer*/
+.footy{
+    background-color: #85734a;
+    padding-top: 1em;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.thicc {
+    font-size: 5em;
+    color: black;
+}
