@@ -1,6 +1,6 @@
 /*header*/
 .banner{
-    background-image: url("/assets/media/banner.PNG");
+    background-image: url("../media/banner.PNG");
     background-size: contain;
     height: 8em;
 }
@@ -16,7 +16,7 @@
 /*General Use*/
 
 .DayTime {
-    background-image: url("/assets/media/background.jpg");
+    background-image: url("../media/background.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -59,7 +59,7 @@ div #map{
 
 /*information section*/
 .information{
-    background-image: url("/assets/media/paper.jpg");
+    background-image: url("../media/paper.jpg");
      border-radius: 4px;
      padding: 1em;    
      color: black;     
@@ -82,7 +82,7 @@ div #map{
     border-radius: 4px;
 }
 .lister{
-    background-image: url("/assets/media/paper.jpg");
+    background-image: url("../media/paper.jpg");
     
     min-height: 360px;
     border-radius: 4px;
