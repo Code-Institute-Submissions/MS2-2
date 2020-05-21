@@ -19,7 +19,7 @@ function markerMaker(map) {
         let myLng = (myData[i].lon);
         myLatLng = { lat: myLat, lng: myLng };
         let titleTwo = myData[i].name;
-        let buttonBoy = '<button onclick="addMe(event)">List Me!</button>';
+        let buttonBoy = '<button onClick="addMe(event)" type="button" class="btn btn-success">List Me!</button>';
         let marker = new google.maps.Marker({
             position: myLatLng,
             map: map,
@@ -38,7 +38,7 @@ function markerMaker(map) {
 }
 function addMe(event) {
     //special thanks to Samantha_CI at tutor support for helping me through this!  she's awesome.
-    let answer = '<div>' + event.target.parentElement.previousSibling.previousSibling.innerHTML + '<button onclick="removeMe(event)">Remove</button>' + '</div>';
+    let answer = '<div>' + event.target.parentElement.previousSibling.previousSibling.innerHTML + '<button onClick="removeMe(event)" type="button" class="btn btn-danger">Remove</button>' + '</div>';
     let li = '<li>' + answer + '</li>'
     $('#list').append(li);
 }
