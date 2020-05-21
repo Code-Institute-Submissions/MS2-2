@@ -41,36 +41,11 @@ function addMe(event) {
     let answer = '<div>' + event.target.parentElement.previousSibling.previousSibling.innerHTML + '<button onclick="removeMe(event)">Remove</button>' + '</div>';
     let li = '<li>' + answer + '</li>'
     $('#list').append(li);
-    if (typeof (Storage) !== "undefined") {
-        localStorage.setItem("list", document.getElementById('list'));
-    }
-    else {
-        console.log('No local Storage access.');
-        console.log(localStorage.getItem('list'));
-
-    }
 }
 function removeMe(event) {
     $(event.target.parentNode.parentNode).remove();
 }
 
-$(document).ready(function () {
-    if (localStorage.getItem('list').length > 0) {
-        document.getElementById('list') == localStorage.list;
-    }
-    else {
-        console.log('nothing to see here');
-    }
-});
-
-if (typeof (Storage) !== "undefined") {
-    localStorage.setItem("list", document.getElementById('list'));
-}
-else {
-    console.log('No local Storage access.');
-    console.log(localStorage.getItem('list'));
-
-}
 
 
 

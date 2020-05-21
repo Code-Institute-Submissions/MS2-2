@@ -9,14 +9,12 @@
 
 /*body*/
 .tupperware{
-    width: 66%;
-    align-content: left;
+    width: 66%;    
     padding: 2em;
     
 }
 .tupperwareTwo{
-    width: 33%;
-    align-content: right;
+    width: 33%;    
     padding: 2em;
 }
 
@@ -89,13 +87,6 @@ div #map{
     font-family: Roboto, sans-serif;
     
 }
-
-
-
-
-
-
-
 .lister{
     background-image: url("/assets/media/paper.jpg");
     height: 100%;
@@ -110,7 +101,7 @@ div #map{
 }
 .listerlist{
     color: black;
-    font-family: Indie Flower, sans-serif;
+    font-family: 'Indie Flower', sans-serif;
     font-size: 1em;
 }   
 
