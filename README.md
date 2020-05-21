@@ -26,16 +26,14 @@ as an employer, id like to review Datum's work and have a method that leads to h
 i wanted something simple and clean that showed some nature, the wireframes i used can be found below. 
 
 
-![GitHub Logo](/wireframes/desktop.png)
-Format: ![Desktop Wireframe](url)
+![desktop wireframe](https://raw.githubusercontent.com/DatumEight/MS2/wireframes/desktop.PNG)
 
 
-![GitHub Logo](/wireframes/tablet_view.png)
-Format: ![Mobile](url)
+
+![tablet wireframe](https://raw.githubusercontent.com/DatumEight/MS2/wireframes/tablet_view.PNG)
 
 
-![GitHub Logo](/wireframes/Mobile.png)
-Format: ![Tablet](url)
+![mobile wireframe](https://raw.githubusercontent.com/DatumEight/MS2/wireframes/Mobile.PNG)
 
 
 
