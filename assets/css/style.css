@@ -47,7 +47,7 @@
 
 .greeting{
     text-align: center;
-    color: #85734a;;
+    color: #85734a;
     font-family: Lato, sans-serif;
     font-size: 5em;
     font-weight: 700;
@@ -102,7 +102,10 @@ div #map{
 
 /*footer*/
 .footy{
-    background-color: 
+    background-color: #85734a;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 .thicc {
     font-size: 5em;
