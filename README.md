@@ -2,8 +2,8 @@
 
 # Appalachian Trail Route Planner
 
-project was created to help people plan their route along the Appalachian Trail via the shelters, towns, and points of interest.
-
+This project was created to help people plan their route along the Appalachian Trail via the shelters, towns, and points of interest.
+live link (https://datumeight.github.io/MS2/)
 # UX
 ## User stories
 
