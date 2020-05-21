@@ -9,6 +9,7 @@
     margin-right: 0;
     overflow-x: hidden;
 }
+
 /*HTML*/
 
 /*body*/
@@ -35,46 +36,29 @@
     min-height: 100vh;
     
 }
-@media only screen and (max-width: 600px) {
-  .DayTime {
-    overflow: hidden;
-  }
-}
-
-
-
- .break {
-     border: 3px #f97f1b solid;
-     border-radius: 5px;
-    
-}
 
 /*header*/
-
+.banner{
+    background-image: url("/assets/media/banner.PNG");
+    background-size: contain;
+    height: 8em;
+}
 
 .greeting{
     text-align: center;
-    color: #f97f1b;
-    font-family: Lato, sans-serif;
+    color: #85734a;;
+    font-family: "Indie Flower", sans-serif;
+    font-size: 5em;
+    font-weight: 700;
 }
 
 
 
 
-header {
-   color: #f97f1b;
-   text-align: center;
-    
-}
 /* dark mode */
 
 
-div .helper{
-    background-color: rgba(0, 0, 0, .55);
-    width: 75vh;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 /*Map Style*/
 div #map{
     height: 100%;
