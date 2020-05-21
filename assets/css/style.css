@@ -1,15 +1,8 @@
 * {
     border: red 1px solid;
 }
-.container {
-    margin-bottom: 0;
-}
-.row{
-    margin-left: 0;
-    margin-right: 0;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
+
+
 
 /*HTML*/
 
@@ -32,9 +25,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     font-family: Roboto, sans-serif;
-    padding:1em;    
-    min-width: 100vh;
-    min-height: 100vh;
+    padding: 1em;    
+ 
     
 }
 
@@ -49,20 +41,14 @@
     text-align: center;
     color: #85734a;
     font-family: Lato, sans-serif;
-    font-size: 5em;
+    margin-top: .65em;
     font-weight: 700;
+    
+    
 }
-
-
-
-
-
-
-
-
 /*Map Style*/
 div #map{
-    height: 100%;
+    
     min-height: 360px;
     padding: 2em; 
     border-radius: 4px;
@@ -82,12 +68,23 @@ div #map{
     font-family: Roboto, sans-serif;
     
 }
+.greeting2{
+    text-align: center;
+    color: black;
+    font-family: "indie Flower", sans-serif;
+    font-weight: 700;
+   
+    
+}
+.break{
+    border: .05em solid black;
+    border-radius: 4px;
+}
 .lister{
     background-image: url("/assets/media/paper.jpg");
-    height: 100%;
+    
     min-height: 360px;
     border-radius: 4px;
-    align-items: center;
     margin-left: auto;
     margin-right: auto;
     margin: 0em 1em 0em 1em;
@@ -103,9 +100,11 @@ div #map{
 /*footer*/
 .footy{
     background-color: #85734a;
+    padding-top: 1em;
     bottom: 0;
     left: 0;
     right: 0;
+    text-align: center;
 }
 .thicc {
     font-size: 5em;
