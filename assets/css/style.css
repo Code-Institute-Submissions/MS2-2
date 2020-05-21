@@ -25,7 +25,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     font-family: Roboto, sans-serif;
-    padding: 1em;    
+    padding-bottom: 1em;
+    padding-top: .5em;  
     min-height: 100vh;
     
 }
@@ -41,7 +42,6 @@
     text-align: center;
     color: #85734a;
     font-family: Lato, sans-serif;
-    margin-top: .65em;
     font-weight: 700;
     
     
@@ -56,13 +56,8 @@ div #map{
     margin-left: auto;
     margin-right: auto;
 }
-.maprow{ 
-    margin: 0em 1em 0em 1em
-    }
 
-.mapcol{
-    padding: 1em;
-}
+
 .customMarker{
     color: black;
     font-family: Roboto, sans-serif;
