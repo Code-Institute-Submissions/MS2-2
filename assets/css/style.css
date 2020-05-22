@@ -1,6 +1,6 @@
 /*header*/
 .banner{
-    background-image: url("../media/banner.PNG");
+    background-image: url("../media/wood.jpg");
     background-size: contain;
     height: 8em;
     border-radius: .25em;
@@ -8,16 +8,23 @@
 
 .greeting{
     text-align: center;
-    color: #85734a;
+    color: black;
     font-family: Lato, sans-serif;
     font-weight: 700;
+    font-size: 6em;
     
     
 }
+@media only screen and (max-width: 800px) {
+  .greeting {
+    font-size: 3em;
+  }
+}
+
 /*General Use*/
 
 .DayTime {
-    background-image: url("../media/background.jpg");
+    background-image: url("../media/1216423.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -100,7 +107,7 @@ div #map{
 }  
 /*footer*/
 .footy{
-    background-color: #85734a;
+    background-color: #464441;
     padding-top: 1em;
     bottom: 0;
     left: 0;
