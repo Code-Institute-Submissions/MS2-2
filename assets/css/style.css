@@ -27,8 +27,6 @@
     background-image: url("../media/1216423.jpg");
     background-attachment: fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-    font-family: Roboto, sans-serif;
     padding-bottom: 1em;
     padding-top: .5em;  
     min-height: 100vh;
@@ -50,8 +48,7 @@ div #map{
     
     min-height: 360px;
     padding: 2em; 
-    border-radius: .25em;
-    align-items: center;
+    border-radius: .25em;   
     margin-left: auto;
     margin-right: auto;
 }
@@ -90,12 +87,9 @@ div #map{
     border-radius: .25em;
 }
 .lister{
-    background-image: url("../media/paper.jpg");
-    
+    background-image: url("../media/paper.jpg");    
     min-height: 360px;
     border-radius: .25em;
-    margin-left: auto;
-    margin-right: auto;
     margin: 0em 1em 0em 1em;
     padding: 2em;
 
@@ -108,10 +102,7 @@ div #map{
 /*footer*/
 .footy{
     background-color: #464441;
-    padding-top: 1em;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    padding-top: 1em; 
     text-align: center;
 }
 .thicc {
