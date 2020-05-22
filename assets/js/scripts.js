@@ -1,7 +1,7 @@
 
 // maps code below
 var APIkey = "AIzaSyDV2rXpc-RvQizNTihXs0xXtVik0nRkmE8";
-//var myData;
+
 $.getJSON('assets/js/waypoints.json', function (data) {
     myData = data;
 });// adds JSON data to local variable
